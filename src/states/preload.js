@@ -18,6 +18,14 @@ ProEvolutionQuidditch.preloadState.prototype = {
         game.load.image('vs', '../assets/images/text/vs.png');
         game.load.image('winner', '../assets/images/text/winner.png');
 
+
+        game.load.image('background', '../assets/images/background/background.png');
+        game.load.image('background2', '../assets/images/background/background2.png');
+        game.load.image('stadium1', '../assets/images/background/stadium1.png');
+        game.load.image('stadium2', '../assets/images/background/stadium2.png');
+        game.load.image('stadium3', '../assets/images/background/stadium3.png');
+        game.load.image('stadium4', '../assets/images/background/stadium4.png');
+
         game.load.image('draco', '../assets/images/draco.png');
         game.load.image('griffindor', '../assets/images/griffindor.png');
         game.load.image('harry', '../assets/images/harry.png');
