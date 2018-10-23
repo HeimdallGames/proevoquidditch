@@ -37,5 +37,5 @@ ProEvolutionQuidditch.endingState.prototype = {
 
 
 function listener() {
-    game.switchState('menuState');
+    game.state.start('menuState');
 }
