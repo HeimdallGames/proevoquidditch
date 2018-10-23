@@ -38,27 +38,25 @@ ProEvolutionQuidditch.preloadState.prototype = {
         game.load.image('trophy', '../assets/images/trophy.png');
     },
 
-    var harry;
-
     create: function () {
         var text = "LOADING...";
         var style = { font: "65px Arial", fill: "#ff0044", align: "center" };
 
-        harry = game.add.sprite(200, 200, 'harry');
-        bot.animations.add('run');
-        bot.animations.play('run', 15, true);
+        var harry = game.add.sprite(200, 200, 'harry');
+        //harry.animations.add('run');
+        //harry.animations.play('run', 15, true);
 
         var t = game.add.text(game.world.centerX - 300, 0, text, style);
-       // game.switchState('menuState');
+       // game.state.start('menuState');
     },
 
     update: function () {
 
-        harry.x -= 2;
+       // harry.x -= 2;
 
-        if (harry.x < -harry.width) {
-            harry.x = game.world.width;
-        }
+        //if (harry.x < -harry.width) {
+        //    harry.x = game.world.width;
+        //}
 
     }
 }
