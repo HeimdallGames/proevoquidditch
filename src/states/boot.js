@@ -1,8 +1,8 @@
-var ProEvolutionQuidditch = {}
+var ProEvolutionQuidditch = {};
 
 ProEvolutionQuidditch.bootState = function(game) {
 
-}
+};
 
 ProEvolutionQuidditch.bootState.prototype = {
 
@@ -18,4 +18,4 @@ ProEvolutionQuidditch.bootState.prototype = {
     update: function() {
 
     }
-}
+};

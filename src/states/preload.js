@@ -1,6 +1,6 @@
 ProEvolutionQuidditch.preloadState = function(game) {
 
-}
+};
 
 ProEvolutionQuidditch.preloadState.prototype = {
 
@@ -40,10 +40,10 @@ ProEvolutionQuidditch.preloadState.prototype = {
         var style = { font: "65px Arial", fill: "#ff0044", align: "center" };
 
         var t = game.add.text(game.world.centerX - 300, 0, text, style);
-        game.state.start('menuState');
+        game.state.start('introState');
     },
 
     update: function() {
 
     }
-}
+};
