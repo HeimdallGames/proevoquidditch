@@ -1,10 +1,13 @@
 ProEvolutionQuidditch.preloadState = function(game) {
 
-}
+};
 
 ProEvolutionQuidditch.preloadState.prototype = {
 
-    preload: function() {
+    
+
+    preload: function () {
+        
         game.load.image('loading1', '../assets/images/text/loading1.png');
         game.load.image('loading2', '../assets/images/text/loading2.png');
         game.load.image('cleangame', '../assets/images/text/cleangame.png');
@@ -39,11 +42,20 @@ ProEvolutionQuidditch.preloadState.prototype = {
         var text = "LOADING...";
         var style = { font: "65px Arial", fill: "#ff0044", align: "center" };
 
+        harry = game.add.sprite(200, 200, 'harry');
+
         var t = game.add.text(game.world.centerX - 300, 0, text, style);
-        game.switchState('menuState');
+        game.state.start('menuState');
+        
     },
 
-    update: function() {
+    update: function () {
+
+        harry.x -= 4 ;
+
+        if (harry.x < -harry.width) {
+            harry.x = game.world.width;
+        }
 
     }
-}
+};
