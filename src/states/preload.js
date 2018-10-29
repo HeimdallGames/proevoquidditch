@@ -43,14 +43,10 @@ ProEvolutionQuidditch.preloadState.prototype = {
         var style = { font: "65px Arial", fill: "#ff0044", align: "center" };
 
         harry = game.add.sprite(200, 200, 'harry');
-       // harry.animations.add('run');
-        //harry.animations.play('run', 15, true);
 
         var t = game.add.text(game.world.centerX - 300, 0, text, style);
-       // game.state.start('menuState');
-        //game.state.start('menuState');
-
-       // game.state.start('introState');
+        game.state.start('menuState');
+        
     },
 
     update: function () {
