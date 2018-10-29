@@ -36,6 +36,15 @@ ProEvolutionQuidditch.preloadState.prototype = {
         game.load.image('slytherin', '../assets/images/slytherin.png');
         game.load.image('snitch', '../assets/images/snitch.png');
         game.load.image('trophy', '../assets/images/trophy.png');
+
+        game.load.audio('1', '../assets/audio/1.ogg');
+        game.load.audio('2', '../assets/audio/2.ogg');
+        game.load.audio('powerUp9', '../assets/audio/powerUp9.ogg');
+        game.load.audio('you_win', '../assets/audio/you_win.ogg');
+
+        game.load.audio('bensound-creepy', '../assets/music/bensound-creepy.ogg');
+        game.load.audio('bensound-epic', '../assets/music/bensound-epic.ogg');
+        game.load.audio('bensound-happyrock', '../assets/music/bensound-happyrock.ogg');
     },
 
     create: function () {
