@@ -5,13 +5,7 @@ ProEvolutionQuidditch.menuState = function(game) {
 ProEvolutionQuidditch.menuState.prototype = {
 
     preload: function() {
-        game.load.image('background','assets/images/background/background.png');
-        game.load.image('harry','assets/images/harry.png' );
-        game.load.image('draco','assets/images/draco.png');
-        game.load.image('griffindor','assets/images/griffindor.png');
-        game.load.image('snitch','assets/images/snitch.png');
-        game.load.image('title','assets/images/text/title.png');
-        game.load.image('start','assets/images/text/start.png');
+       
         
     },
 
@@ -29,8 +23,9 @@ ProEvolutionQuidditch.menuState.prototype = {
        var snitch = game.add.sprite(260,0, 'snitch');
        snitch.scale.set(2);
 
+
+
        key1 = game.input.keyboard.addKey(Phaser.Keyboard.S);
-       key1.onDown.game.state.start(game.state.current);
 
      
 
@@ -39,6 +34,10 @@ ProEvolutionQuidditch.menuState.prototype = {
     },
 
     update: function() {
+        if(key1.isDown)
+        {
+            game.state.start('introState');
 
+        }
     }
 }
