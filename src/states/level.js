@@ -56,13 +56,13 @@ ProEvolutionQuidditch.levelState.prototype = {
         function colision(){
             points+=150;
             tPoints.text='Points: '+points;
-            
-            
+            snitch.x=(Math.random()*(700-100)+100);
+            snitch.y=(Math.random()*(500-100)+100);
         }
         game.physics.arcade.collide(harry,snitch,colision,null,game);
         
 
-        if(points>=150){
+        if(points>=300){
             game.state.start('endingState');
         }
         
