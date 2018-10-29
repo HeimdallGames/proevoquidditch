@@ -42,24 +42,24 @@ ProEvolutionQuidditch.preloadState.prototype = {
         var text = "LOADING...";
         var style = { font: "65px Arial", fill: "#ff0044", align: "center" };
 
-        var harry = game.add.sprite(200, 200, 'harry');
-        //harry.animations.add('run');
+        harry = game.add.sprite(200, 200, 'harry');
+       // harry.animations.add('run');
         //harry.animations.play('run', 15, true);
 
         var t = game.add.text(game.world.centerX - 300, 0, text, style);
        // game.state.start('menuState');
-        game.state.start('menuState');
+        //game.state.start('menuState');
 
-        game.state.start('introState');
+       // game.state.start('introState');
     },
 
     update: function () {
 
-       // harry.x -= 2;
+        harry.x += 4 ;
 
-        //if (harry.x < -harry.width) {
-        //    harry.x = game.world.width;
-        //}
+        if (harry.x > -harry.width) {
+            harry.x = game.world.width;
+        }
 
     }
 };
