@@ -1,6 +1,6 @@
 ProEvolutionQuidditch.introState = function(game) {
 
-}
+};
 
 ProEvolutionQuidditch.introState.prototype = {
 
@@ -9,7 +9,10 @@ ProEvolutionQuidditch.introState.prototype = {
     },
 
     create: function() {
-        var referee = game.add.sprite(80, 0, 'referee');
+        var background = game.add.sprite(game.world.centerX, game.world.centerY, 'background');
+        background.anchor.set(0.5);
+        var referee = game.add.sprite(300, 50, 'referee');
+        var text = game.add.sprite(5,400,"cleangame");
         spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     },
 
@@ -19,4 +22,4 @@ ProEvolutionQuidditch.introState.prototype = {
             game.state.start("levelState");
         }
     }
-}
+};
