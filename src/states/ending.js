@@ -9,23 +9,23 @@ ProEvolutionQuidditch.endingState.prototype = {
     },
 
     create: function() {
-        var background = game.add.sprite(game.world.centerX, game.world.centerY, 'background');
-        background.anchor.set(0.5);
+        var background = game.add.sprite(0, 0, 'background2');
 
-        var winnerText = game.add.sprite(game.world.centerX, game.world.centerY, 'winner');
-        winnerText.anchor.set(0.5);
+        var trophy = game.add.sprite(game.world.centerX-62, game.world.centerY-250, 'trophy');
 
-        var trophy = game.add.sprite(game.world.centerX, game.world.centerY, 'trophy');
-        returnText.anchor.set(0.5);
+        var griffindor = game.add.sprite(game.world.centerX-300, game.world.centerY-150, 'griffindor');
 
-        var griffindor = game.add.sprite(game.world.centerX, game.world.centerY, 'griffindor');
-        returnText.anchor.set(0.5);
+        var harry = game.add.sprite(game.world.centerX + 350, game.world.centerY - 150, 'harry');
+        harry.scale.x *= -1;
 
-        var harry = game.add.sprite(game.world.centerX, game.world.centerY, 'harry');
-        returnText.anchor.set(0.5);
+        var returnText = game.add.sprite(game.world.centerX-163, game.world.centerY + 120, 'return');
 
-        var returnText = game.add.sprite(game.world.centerX, game.world.centerY, 'return');
-        returnText.anchor.set(0.5);
+        var winnerText = game.add.sprite(game.world.centerX-138, game.world.centerY + 55, 'winner');
+
+        winnerText.scale.set(0.6);
+        returnText.scale.set(0.3);
+
+        
         returnText.inputEnabled = true;
         returnText.events.onInputDown.add(listener, this);
     },
