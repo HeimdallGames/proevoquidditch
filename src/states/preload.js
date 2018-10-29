@@ -55,9 +55,9 @@ ProEvolutionQuidditch.preloadState.prototype = {
 
     update: function () {
 
-        harry.x += 4 ;
+        harry.x -= 4 ;
 
-        if (harry.x > -harry.width) {
+        if (harry.x < -harry.width) {
             harry.x = game.world.width;
         }
 
