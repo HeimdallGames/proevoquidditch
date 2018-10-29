@@ -47,8 +47,7 @@ ProEvolutionQuidditch.preloadState.prototype = {
 
         harry = game.add.sprite(300, 300, 'harry');
         harry.scale.x *= -1;
-
-        var t = game.add.text(game.world.centerX - 300, 0, text, style);
+        
         game.state.start('menuState');
         
     },
