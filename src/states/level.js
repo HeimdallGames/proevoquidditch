@@ -19,8 +19,7 @@ ProEvolutionQuidditch.levelState = function(game) {
 ProEvolutionQuidditch.levelState.prototype = {
 
     preload: function() {
-        game.load.image('harry', '../assets/images/harry.png');
-        game.load.image('snitch', '../assets/images/snitch.png');
+        
     },
 
     create: function() {
