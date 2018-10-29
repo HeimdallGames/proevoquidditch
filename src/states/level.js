@@ -10,7 +10,7 @@ ProEvolutionQuidditch.levelState = function(game) {
     //Variables de objetos
     var harry;
     var snitch;
-
+    var back;
     //Variables
     var celerity;
     var points;
@@ -19,10 +19,12 @@ ProEvolutionQuidditch.levelState = function(game) {
 ProEvolutionQuidditch.levelState.prototype = {
 
     preload: function() {
-        
+
     },
 
     create: function() {
+        
+        back=game.add.sprite(0,0,'stadium1');
         celerity=3;
         points=0;
         harry=game.add.sprite(40,40,'harry');
@@ -37,6 +39,7 @@ ProEvolutionQuidditch.levelState.prototype = {
         leftKey=game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
         tPoints = game.add.text(40,50, 'Points: ');
         tPoints.fill = '#ffffff';
+
     },
     update: function() {
         
