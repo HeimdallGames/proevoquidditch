@@ -49,7 +49,7 @@ ProEvolutionQuidditch.preloadState.prototype = {
         harry.scale.x *= -1;
 
         var t = game.add.text(game.world.centerX - 300, 0, text, style);
-        //game.state.start('menuState');
+        game.state.start('menuState');
         
     },
 
