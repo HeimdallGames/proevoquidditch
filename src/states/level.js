@@ -15,6 +15,7 @@ ProEvolutionQuidditch.levelState = function(game) {
     var celerity;
     var points;
     var tPoints; //Texto para los puntos
+    var shield;
 
 ProEvolutionQuidditch.levelState.prototype = {
 
@@ -37,8 +38,11 @@ ProEvolutionQuidditch.levelState.prototype = {
         downKey=game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
         rightKey=game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
         leftKey=game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
-        tPoints = game.add.text(40,50, 'Points: ');
-        tPoints.fill = '#ffffff';
+        tPoints = game.add.text(70,50, 'Points: ');
+        tPoints.fill = '#000000';
+        shield=game.add.sprite(30,40,'griffindor');
+        shield.width=40;
+        shield.height=50;
 
     },
     update: function() {
@@ -54,7 +58,7 @@ ProEvolutionQuidditch.levelState.prototype = {
             harry.x-=celerity;
         }
         function colision(){
-            points+=150;
+            points+=1;
             tPoints.text='Points: '+points;
             snitch.x=(Math.random()*(700-100)+100);
             snitch.y=(Math.random()*(500-100)+100);
@@ -62,7 +66,7 @@ ProEvolutionQuidditch.levelState.prototype = {
         game.physics.arcade.collide(harry,snitch,colision,null,game);
         
 
-        if(points>=300){
+        if(points>=3){
             game.state.start('endingState');
         }
         
