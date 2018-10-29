@@ -1,6 +1,6 @@
 ProEvolutionQuidditch.endingState = function(game) {
 
-}
+};
 
 ProEvolutionQuidditch.endingState.prototype = {
 
@@ -33,7 +33,7 @@ ProEvolutionQuidditch.endingState.prototype = {
     update: function() {
 
     }
-}
+};
 
 
 function listener() {
