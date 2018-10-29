@@ -49,10 +49,14 @@ ProEvolutionQuidditch.preloadState.prototype = {
         var t = game.add.text(game.world.centerX - 300, 0, text, style);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
        // game.state.start('menuState');
 =======
         game.state.start('menuState');
 >>>>>>> 4cc0b021b93614c1b72a1b666345cd7856464470
+=======
+        game.state.start('introState');
+>>>>>>> 685b21eabe961f3c71d113dba4293da8cb4d4e8b
 =======
         game.state.start('introState');
 >>>>>>> 685b21eabe961f3c71d113dba4293da8cb4d4e8b
